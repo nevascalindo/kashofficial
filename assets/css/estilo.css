@@ -1,0 +1,533 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root{
+  --bg-color:var(--bg-color) #ffffff;
+  --tex-color: #000000;
+  --main-color: gray;
+  --other-color: #000000;
+  --h1-font: 4rem;
+  --p-font: 1rem;
+}
+
+body{
+  background-color:#ffffff ;
+  color: var(--tex-color);
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 3%;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+#logo{
+  display: flex;
+  align-items: center;
+  color: var(--tex-color);
+  font-size: 28px;
+  width: 90px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.navegação{
+  display: flex;
+}
+
+.navegação a{
+  color: var(--other-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  margin: 0 30px;
+  transition: a .55s ease;
+}
+
+.navegação a:hover{
+  color: var(--main-color);
+
+}
+
+
+.header-icons{
+  display: flex;
+  align-items: center;
+}
+
+#menu{
+  font-size: 35px;
+  color: var(--tex-color);
+  z-index: 10001;
+  cursor: pointer;
+}
+
+#carrinho {
+  text-decoration: none;
+  color: #000000;
+}
+.header-icons i{
+  margin-right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.header-icons i:hover{
+  transform: translateY(-5px);
+  color: var(--main-color);
+}
+
+
+.section{
+
+  padding: 0 15%;
+}
+.home{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-text h1{
+  font-size: var(--h1-font);
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.home-text h5{
+  color: #00000099;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.home-text h3{
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+
+
+.home-img img{
+  max-width: 100%;
+  width: 28rem;
+  height: auto;
+  margin-left: 25%;
+}
+
+
+.btn{
+  display: inline-block;
+  padding: 15px 70px;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  border: solid 2px var(--tex-color);
+  transition: all.55 ease;
+  color: black;
+}
+
+.btn:hover{
+  background: var(--tex-color);
+  border: 2px solid var(--tex-color);
+  color: #ffffff;
+}
+
+.main{
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main li img{
+  width: 50px;
+  height: auto;
+  max-width: 100%;
+}
+
+.row{
+  background: green;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all.55s ease;
+  cursor: pointer;
+  display: inline-flex;
+}
+.row img{
+  margin-top: 10px;
+}
+
+.row:hover {
+  transform: translateY(-8px);
+
+}
+
+.row2{
+  background: red;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all.55s ease;
+  cursor: pointer;
+}
+
+.row2 img{
+  margin-top: 5px;
+}
+
+.row2:hover{
+  transform: translateY(-8px);
+}
+
+.row3{
+  background: purple;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all.55s ease;
+  cursor: pointer;
+
+}
+
+.row3 img{
+  margin-top: 5px;
+}
+
+.row3:hover{
+  transform: translateY(-8px);
+}
+
+.degrade-row{
+  background-image: linear-gradient(to bottom, green,rgb(11, 250, 11));
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+/*--------------------------------SHOP----------------------------------------------*/
+#banner{
+  width: 70%;
+  margin-top: 150px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px black;
+  border-radius: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  margin-top: 50px;
+  text-align: center;
+}
+.image-container p{
+  color: green;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+.image:hover {
+  transform: scale(1.2);
+}
+
+/*-------------------LOGIN--------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+.bodylogin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerlogin {
+  background-color: whitesmoke;
+  padding: 6px;
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 darkgrey;
+}
+
+form {
+  position: absolute;
+  margin-top: 80px;
+  transition: .5s;
+  width: 300px;
+  height: 400px;
+}
+
+.buttonsForm {
+  margin-top: 40px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 #818181;
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 29px;
+}
+
+.btnColor {
+  position: absolute;
+  width: 108px;
+  height: 100%;
+  background: linear-gradient(to right, #818181, #7a757a);
+  border-radius: 30px;
+  transition: .3s;
+  color: white;
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 40px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background: white;
+  color: black;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  transition: 0.4s ;
+  background-color: gray;
+}
+
+.divCheck {
+  margin: 10px 0 0 5px;
+  width: 80%;
+  font-size: 13px;
+}
+
+#signin {
+  left: 25px;
+}
+
+#signup {
+  left: 450px;
+}
+
+.iEmail {
+  top: 40px;
+}
+
+.iPassword {
+  top: 114px;
+}
+
+.iPassword2 {
+  top: 190px;
+}
+/*----------------------------------------------------CAMISA---------------------*/
+#camisaCompra {
+  margin-top: 145px;
+  margin-left: 485px;
+}
+#tituloCompra {
+    position: absolute;
+    margin-left: 52%;
+    margin-top: -25%;
+    font-family: 'Poppins', sans-serif;
+}
+#precoCompra {
+    position: absolute;
+    margin-left: 52%;
+    margin-top: -23%;
+    font-family: 'Poppins', sans-serif;
+}
+#descCompra {
+    position: absolute;
+    margin-left: 52%;
+    margin-top: -21%;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+#tamanhosCompra {
+    position: absolute;
+    margin-left: 52%;
+    margin-top: -18%;
+}
+#tamanhosCompra button{
+    background-color: white;
+    color: black;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+#tamanhosCompra :hover{
+    cursor: pointer;
+    background-color: #7a757a;
+    color: white;
+}
+#compraSelecionar{
+  background-color: #7a757a;
+  color: white;
+}
+#butonCompra {
+  position: absolute;
+  margin-top: 360px;
+  width: 10%;
+  height: 4%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+#butonCompra:hover{
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  border: 2px black solid;
+  border-radius: 10px;
+}
+#desc2Compra{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: large;
+}
+#detalCompra {
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid black;
+  width: 40%;
+  margin-left: 30%;
+}
+#detalCompra p{
+  margin-top: 15px;
+}
+#titCompra {
+  font-weight: bold;
+}
+#counter {
+  border: 2px black solid;
+  border-radius: 5px;
+  width: 140px;
+  height: 40px;
+  position: absolute;
+  margin-left: 52%;
+  margin-top: -16%;
+}
+#plus {
+  float: right;
+  margin-top: 5px;
+  margin-right: 15px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  font-size: larger;
+}
+#minus {
+  float: left;
+  margin-top: 5px;
+  margin-left: 15px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  font-size: larger;
+}
+#value {
+  margin-left: 25px;
+  position: absolute;
+  margin-top: 5px;
+}
+/*----------------------------------CARRINHO----------------------*/
+.cart{
+  text-align: center;
+  margin-top: 20%;
+}
+.itensCart{
+  width: 550px;
+  border: 2px black solid;
+  display: inline-block;
+  border-radius: 15px;
+}
+/*-------------------------------LOOKBOOK---------------------------*/
+#image-container{
+  margin-top: 2%;
+}
+#image-container img {
+  width: 30%;
+  border-radius: 25px;
+}

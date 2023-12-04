@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="assets/img/Simbolo Branco.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <title>Camiseta Real Love - Kash.Co</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="assets/img/simbolopreto.png" id="logo"></a>
+
+        <ul class="navegação">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="lookbook.html">Lookbook</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <a id="carrinho" href="carrinho.html"><i class='bx bx-cart'></i></a>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+
+    <img src="assets/img/camisa1.png" alt="" id="camisaCompra">
+    <h1 id="tituloCompra">Camiseta Real Love</h1>
+    <h3 id="precoCompra">R$89,90</h3>
+    <p id="descCompra">A camiseta "Real Love" é uma peça que captura a essência do amor verdadeiro em um design elegante e encantador.<br> 
+    Com um casal apaixonado estampado na frente, essa camiseta transmite uma mensagem poderosa e atemporal.</p>
+    <section id="tamanhosCompra">
+    <button>P</button>
+    <button>M</button>
+    <button>G</button>
+    <button>GG</button>
+    </section>
+    <button id="butonCompra">Comprar</button>
+    <br>
+    <h2 id="desc2Compra">Descrição</h2>
+    <section id="detalCompra">
+    <p>Camiseta Streetwear Off-White 100% algodão fio 30.1 penteado e gramatura de 180g.</p>
+    <p id="titCompra">Medidas aproximadas:</p>
+    <p>P: Largura 55cm  –  Altura 73cm – Manga 23cm.</p>
+    <p>M: Largura 57cm  –  Altura 75cm – Manga 24cm.</p>
+    <p>G: Largura 59cm  –  Altura 77cm – Manga 25cm.</p>
+    <p>GG: Largura 61cm  –  Altura 79cm – Manga 26cm.</p>
+    </section>
+     
+  
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+    
+</body>
+</html>

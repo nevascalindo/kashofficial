@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="assets/img/Simbolo Branco.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <title>Shop - Kash.Co</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="assets/img/simbolopreto.png" id="logo"></a>
+
+        <ul class="navegação">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="lookbook.html">Lookbook</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+          <a id="carrinho" href="carrinho.html"><i class='bx bx-cart'></i></a>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+    <center>
+    <img src="assets/img/banner.jpg" id="banner">
+    </center>
+    <div class="container">
+        <div class="image-container">
+          <a href="reallove.html"><img class="image" src="assets/img/camisa1.png" alt="Real Love"></a>
+          <h2>Real Love</h2>
+          <p>R$89,90</p>
+        </div>
+        <div class="image-container">
+          <a href="mkm.html"><img class="image" src="assets/img/camisa2.png" alt="Make Money"></a>
+          <h2>Make Money</h2>
+          <p>R$89,90</p>
+        </div>
+        <div class="image-container">
+          <a href="broken.html"><img class="image" src="assets/img/camisa3.png" alt="Broken Heart"></a>
+          <h2>Broken Heart</h2>
+          <p>R$89,90</p>
+        </div> 
+    <script>
+        // Get all the images
+    const images = document.querySelectorAll('.image');
+    // Add a zoom effect to each image
+    images.forEach(image => {
+      image.addEventListener('mouseover', () => {
+        image.classList.add('zoom');
+      });
+      image.addEventListener('mouseout', () => {
+        image.classList.remove('zoom');
+      });
+    });
+    </script>
+    
+</body>
+</html>
