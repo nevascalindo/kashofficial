@@ -28,6 +28,9 @@ Alta qualidade dos produtos em comércio no site, tendo camisetas, calças e cas
 * [High Company](https://highcompanybr.com/)
 * [Palla](https://palla.world/)
 
+## Link do site :
+* [Kash Company](https://nevascalindo.github.io/kashofficial/)
+
 [^1]: Colocar imagens 
 
 
